@@ -38,4 +38,7 @@ def supprimer(request,my_id):
     # on va recuperer un un element dans la base de donnes
     obj = Task.objects.get(id=my_id)
     obj.delete()
-    return redirect('acceuil')    
+    return redirect('acceuil')
+
+def new():
+    pass    
