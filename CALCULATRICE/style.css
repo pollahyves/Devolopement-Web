@@ -1,0 +1,67 @@
+*{
+    /*on enleve tout le style qui est donner par defeaut au element*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    max-width: 100vw; /*pour dire que l'on prend toute la largeur de l'ecran possible*/
+    height: 100vh; /*pour dire que l'on prend toute la largeur de l'ecran possible*/
+    display: flex; /* pour mettre les element au centre*/
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+  
+
+ }
+
+ .calculatrice{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+ }
+
+ .ecran{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;justify-content: flex-end;
+    align-items: flex-end; /* aligner les element ver le bas*/
+    padding: 10px;
+    font-size: 25px;
+ }
+
+ .touch{
+    display: grid; /* pour dfinir les culon et les ligne*/
+    grid-template-columns: repeat(5,50px); /*repete moi 5 culonne de 50px de large*/
+    grid-template-rows: repeat(4,50px);
+    grid-gap: 5px;
+
+ }
+
+ h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  
+ }
+
+ button{
+   
+   outline: none;
+   border-radius: 5px;
+   font-size: 18px;
+ }
+
+ button[data-key="8"]{
+   grid-row: span 2;
+ }
+
+ button[data-key="13"]{
+   grid-row: span 2;
+ }
